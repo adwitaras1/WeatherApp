@@ -15,7 +15,7 @@ function Forecast (){
             console.log(forcastData)
         }).catch(err => {
             console.log(err)
-        })
+        },[Data.coord.lat , Data.coord.lon])
 
 
     },[Data.coord.lat , Data.coord.lon])
